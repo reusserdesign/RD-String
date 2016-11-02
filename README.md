@@ -6,7 +6,9 @@ This plugin takes 2 parameters, `functions` and `params`. Each is a pipe-delimit
 ## Basic Example
 
 ```html
-{exp:rd_string functions="substr" params="10"}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a ipsum{/exp:rd_string}
+{exp:rd_string functions="substr" params="10"}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a ipsum
+{/exp:rd_string}
 ```
 
 returns:
@@ -18,7 +20,9 @@ Lorem ipsu
 ## Multiple Example
 
 ```html
-{exp:rd_string functions="substr|strtoupper" params="15|"}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a ipsum{/exp:rd_string}
+{exp:rd_string functions="substr|strtoupper" params="15|"}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a ipsum
+{/exp:rd_string}
 ```
 
 returns:
