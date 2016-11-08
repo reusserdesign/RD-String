@@ -35,7 +35,10 @@ class Rd_string
 		$params = explode("|", $params);
 		foreach($params as $key => $param)
 		{
-			$params[$key] = explode(",", $param);
+			if(stripos($params[$key], ",") !== false)
+			{
+				$params[$key] = explode(",", $param);
+			}
 		}
 		
 		// Initial tag data

@@ -6,6 +6,6 @@ return array(
 	'docs_url'		=> 'https://github.com/reusserdesign/RD-String',
 	'name'			=> 'RD String',
 	'description'	=> 'Adds string manipulation functionality',
-	'version'		=> '3.1.3',
+	'version'		=> '3.1.4',
 	'namespace'		=> 'RDString'
 );
