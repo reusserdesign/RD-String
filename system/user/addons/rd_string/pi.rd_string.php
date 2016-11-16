@@ -2,7 +2,7 @@
 
 /**
  * RD Cache Breaker
- * 
+ *
  * @package		ExpressionEngine
  * @category	Plugin
  * @author		Jarrod D Nix, Reusser Design
@@ -13,7 +13,7 @@ class Rd_string
 {
 
 	public $return_data = "";
-	
+
 	// --------------------------------------------------------------------
 
 	/**
@@ -29,7 +29,7 @@ class Rd_string
 		// Get PHP functions to run
 		$functions = ee()->TMPL->fetch_param('functions');
 		$functions = explode("|", $functions);
-		
+
 		// Get parameters for those functions
 		$params = ee()->TMPL->fetch_param('params');
 		$params = explode("|", $params);
@@ -40,10 +40,10 @@ class Rd_string
 				$params[$key] = explode(",", $param);
 			}
 		}
-		
+
 		// Initial tag data
 		$return = trim(ee()->TMPL->tagdata);
-		
+
 		foreach($functions as $key => $function)
 		{
 			switch($function)
@@ -100,6 +100,10 @@ class Rd_string
 							$return = substr($return, $params[$key][0], $params[$key][1], $params[$key][2]);
 						}
 					}
+					break;
+
+				case "urlencode":
+					$return = url_encode($return);
 					break;
 
 				default:
