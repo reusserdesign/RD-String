@@ -38,4 +38,4 @@ LOREM IPSUM DOL
 * **strtoupper** — Make a string uppercase
 * **substr** — Return part of a string
 * **substr_replace** — Replace text within a portion of a string
-* **url_encode** — URL-encodes string
+* **urlencode** — URL-encodes string

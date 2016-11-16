@@ -103,7 +103,7 @@ class Rd_string
 					break;
 
 				case "urlencode":
-					$return = url_encode($return);
+					$return = urlencode($return);
 					break;
 
 				default:
